@@ -1,101 +1,148 @@
-import Image from "next/image";
+import Links from "./components/Links";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+    <div className="w-full  flex flex-col justify-start items-center gap-20 p-6">
+      <h2 className="text-lg lg:text-3xl font-bold text-white">
+        Ferramentas de Inteligência
+      </h2>
+      <div className="flex max-w-7xl w-full mx-auto flex-wrap justify-around gap-14">
+        <Links
+          href="http://operacional.muralhapaulista.sp.gov.br/"
+          src="/muralha.svg"
+          text="Muralha Paulista"
+          blank="_blank"
         />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+        <Links
+          href="http://inteligenciaweb.intranet.policiamilitar.sp.gov.br"
+          src="/pmesp.svg"
+          text="Inteligência Web"
+          blank="_blank"
+        />
+        <Links
+          href="https://alertabrasil.prf.gov.br/alertabrasil"
+          src="/alertaBrasil.svg"
+          text="Alerta Brasil"
+          blank="_blank"
+        />
+        <Links
+          href="http://dr.itsbrasil.net.br/"
+          src="/rodoviaria2.png"
+          text="DER - its brasil"
+          blank="_blank"
+        />
+        <Links
+          href="https://blitzsjc.sistemasfotosensores.com/"
+          src="/fotoblitz.ico"
+          text="fotobliz - sjc"
+          blank="_blank"
+        />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <Links
+          href="https://www.infocrim.ssp.sp.gov.br/login"
+          src="/sspNovo.png"
+          text="INFOCRIM 4.0"
+          blank="_blank"
+        />
+        <Links
+          href="https://copomonline.policiamilitar.sp.gov.br/Login/Login"
+          src="/pmesp.svg"
+          text="COPOM online"
+          blank="_blank"
+        />
+
+        <Links
+          href="https://seguranca.sinesp.gov.br/sinesp-seguranca/login.jsf?goto=INFOSEG"
+          src="/infoseg.ico"
+          text="INFOSEG"
+          blank="_blank"
+        />
+        <Links
+          href="https://www.hnprd.dipol.prodesp.sp.gov.br/web/(S(pqn0dkxyr0lb2ojxxwnkul5b))/Home/UnknownPage"
+          src="/ssp.ico"
+          text="PRODESP"
+          blank="_blank"
+        />
+        <Links
+          href="https://portalbnmp.cnj.jus.br/#/pesquisa-peca"
+          src="/bnmp.ico"
+          text="portal bnmp"
+          blank="_blank"
+        />
+        <Links
+          href="https://www6.intranet.policiamilitar.sp.gov.br/unidades/6bprv/inteligencia/"
+          src="/rodoviaria2.png"
+          text="bd inteligência"
+          blank="_blank"
+        />
+
+        <Links
+          href="http://www.intranet.policiamilitar.sp.gov.br/"
+          src="/pmesp.svg"
+          text="Intranet"
+          blank="_blank"
+        />
+
+        <Links
+          href="http://sistemasopr.intranet.policiamilitar.sp.gov.br/siopmweb/HSiopm.aspx"
+          src="/pmesp.svg"
+          text="SIOPM Web"
+          blank="_blank"
+        />
+        <Links
+          href="http://10.61.18.121/Funcional/6bprvinteligencia.nsf"
+          src="/logoEmail.png"
+          text="Email da Seção"
+          blank="_blank"
+        />
+        <Links
+          href="https://correio.policiamilitar.sp.gov.br"
+          src="/logoEmail.png"
+          text="Email Pessoal"
+          blank="_blank"
+        />
+        <Links
+          href="https://www.google.com/maps/d/u/0/viewer?mid=1IZQYhjM25zcrjnTEByfibpcDAE59r9o&g_ep=CAESCjExLjExMy4xMDIYACDdYioJLDQ3MDc1OTE1QgJCUg%3D%3D&shorturl=1&ll=-22.155562396118857%2C-49.17513321141613&z=8"
+          src="/maps.png"
+          text="Limites de área dos Batalhões"
+          blank="_blank"
+        />
+        <Links
+          href="https://ead.policiamilitar.sp.gov.br/"
+          src="/pmesp.svg"
+          text="PVT/ITP/EAP"
+          blank="_blank"
+        />
+        <Links
+          href="/consulta"
+          src="/pmesp.svg"
+          text="Consulta DEJEM/DELEGADA"
+        />
+        <Links
+          href="https://sei.sp.gov.br/"
+          src="/sspNovo.png"
+          text="SEI - Sistema Eletrônico de Informações"
+          blank="_blank"
+        />
+        <Links
+          href="https://web.whatsapp.com/"
+          src="/whatsapp.png"
+          text="Whatsapp Web"
+          blank="_blank"
+        />
+        <Links
+          href="https://www.ciaf.policiamilitar.sp.gov.br/folhadepagamento/autenticacaosegura.aspx"
+          src="/pmesp.svg"
+          text="holerite"
+          blank="_blank"
+        />
+        <Links
+          href="http://10.36.216.220:8080/"
+          src="/rodoviaria2.png"
+          text="Servidor p2"
+          blank="_blank"
+        />
+      </div>
     </div>
   );
 }
