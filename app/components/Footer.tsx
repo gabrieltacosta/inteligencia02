@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="flex flex-col w-full h-[5vh] bg-transparent justify-center items-center mt-20">
+    <div className="flex flex-col w-full h-[5vh] bg-transparent justify-center items-center mt-20 absolute bottom-0">
       <p className="text-zinc-400 italic text-xs lg:text-sm text-center">
         &quot;Nós, Policiais Militares, sob a proteção de Deus, estamos
         compromissados com a defesa da Vida, da Integridade Física e da

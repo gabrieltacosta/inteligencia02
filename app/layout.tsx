@@ -25,7 +25,7 @@ export default function RootLayout({
         <div className="bg-[url('/background.jpg')] bg-cover bg-center bg-no-repeat">
           <div
             className="
-          w-full min-h-screen flex flex-col items-center justify-between bg-black/80"
+          w-full min-h-screen flex flex-col items-center bg-black/80 relative"
           >
             <Header />
             {children}
