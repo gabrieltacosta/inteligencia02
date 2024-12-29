@@ -22,7 +22,7 @@ const Consulta = () => {
       </div>
       <Link
         href="/"
-        className="text-black hover:text-black hover:font-bold bg-[#FFFE03] px-6 hover:px-8 py-1 rounded-full"
+        className="text-black hover:font-bold bg-[#FFFE03] px-6 py-1 rounded-lg"
       >
         Voltar
       </Link>
@@ -30,20 +30,21 @@ const Consulta = () => {
         <span className="text-xs text-zinc-400">ID da escala:</span>
         <input
           type="number"
-          id="idEscala"
           className="flex-1 bg-transparent border border-zinc-400 px-2 w-80"
           placeholder="Digite o id da escala..."
           required
           onChange={handleChange}
+          autoFocus
         />
       </div>
       <div className="flex max-w-7xl w-full pb-10">
-        <iframe
-          src={`http://sistemasadmin.intranet.policiamilitar.sp.gov.br/Escala/arrelpreesc.aspx?${valor}`}
-          width="100%"
-          height="900px"
-          id="frameEscala"
-        />
+        {valor === "" ? null : (
+          <iframe
+            src={`http://sistemasadmin.intranet.policiamilitar.sp.gov.br/Escala/arrelpreesc.aspx?${valor}`}
+            width="100%"
+            height="900px"
+          />
+        )}
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import Links from "./components/Links";
 export default function Home() {
   return (
     <div className="w-full  flex flex-col justify-start items-center gap-20 p-6">
-      <h2 className="text-lg lg:text-3xl font-bold text-white">
+      <h2 className="text-lg lg:text-3xl font-bold">
         Ferramentas de Inteligência
       </h2>
       <div className="flex max-w-7xl w-full mx-auto flex-wrap justify-around gap-14">
