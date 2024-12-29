@@ -2,11 +2,11 @@ import Links from "./components/Links";
 
 export default function Home() {
   return (
-    <div className="w-full  flex flex-col justify-start items-center gap-20 p-6">
+    <div className="w-full  flex flex-col justify-start items-center gap-20 p-6 mb-20">
       <h2 className="text-lg lg:text-3xl font-bold">
         Ferramentas de Inteligência
       </h2>
-      <div className="flex max-w-7xl w-full mx-auto flex-wrap justify-around gap-14">
+      <div className="flex max-w-7xl w-full mx-auto flex-wrap justify-around gap-7 lg:gap-14">
         <Links
           href="http://operacional.muralhapaulista.sp.gov.br/"
           src="/muralha.svg"
