@@ -108,7 +108,7 @@ export default function Home() {
           blank="_blank"
         />
         <Links
-          href="https://ead.policiamilitar.sp.gov.br/"
+          href="https://ead.pmesp.org/"
           src="/pmesp.svg"
           text="PVT/ITP/EAP"
           blank="_blank"
